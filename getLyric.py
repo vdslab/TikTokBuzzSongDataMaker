@@ -1,5 +1,6 @@
 import requests
 import os
+import re
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -25,3 +26,9 @@ def get_lyric(title, artist):
 
 def get_formated_lyric(title, artist):
     lyric = get_lyric(title, artist)
+    lyric_section_div = re.split('\n\n', lyric)
+    lyric_sp = [[] for i in range(len(lyric_section_div))]
+    for i in range(len(lyric_section_div)):
+        lyric_sp[i] = lyric_section_div[i].replace('.', ' ').split()
+    # MUST：有料APIにしたら削除する(無料枠ではここまでと文字が出力されているため)
+    lyric_sp.pop(-1)
