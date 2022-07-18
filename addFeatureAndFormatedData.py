@@ -3,6 +3,9 @@ from tkinter.tix import ROW
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
+from getLyric import get_formated_lyric
+from analysisLyric import analysis_lyric
+
 load_dotenv()
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
@@ -34,7 +37,10 @@ def add_feature_and_formated_data(data_list, date):
             music_feuture[key] = song_features[0][key]
         formated_data["music_feature"] = music_feuture
 
-        lyrics_feature = dict()
+        lyric_text = get_formated_lyric(
+            data["track_name"], artists_info["name"])
+        lyrics_feature = analysis_lyric(lyric_text)
+
         # TODO：歌詞分析
         formated_data["lyrics_feature"] = lyrics_feature
 
