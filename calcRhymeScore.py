@@ -31,7 +31,7 @@ def get_idx_score(vowel_data, target_word):
     return sorted(ranking, key=lambda x: -x[1])
 
 
-def calc_line_section_score(section):
+def calc_section_rhyme_score(section):
     kakasi.setMode('H', 'a')
     kakasi.setMode('K', 'a')
     kakasi.setMode('J', 'a')

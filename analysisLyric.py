@@ -1,5 +1,5 @@
 
-from calcRhymeScore import calc_line_section_score
+from calcRhymeScore import calc_section_rhyme_score
 import math
 
 
@@ -8,7 +8,7 @@ def analysis_lyric(lyric_text):
     total_rhyme_score = 0
     total_positive_score = 0
     for section in lyric_text:
-        rhyme_score = calc_line_section_score(section)
+        rhyme_score = calc_section_rhyme_score(section)
         positive_score = 0
         obj = {
             "text": section,
