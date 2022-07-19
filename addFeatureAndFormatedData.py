@@ -39,7 +39,10 @@ def add_feature_and_formated_data(data_list, date):
 
         lyric_text = get_formated_lyric(
             data["track_name"], artists_info["name"])
-        lyrics_feature = analysis_lyric(lyric_text)
+        if lyric_text is None:
+            lyrics_feature = None
+        else:
+            lyrics_feature = analysis_lyric(lyric_text)
 
         # TODO：歌詞分析
         formated_data["lyrics_feature"] = lyrics_feature
