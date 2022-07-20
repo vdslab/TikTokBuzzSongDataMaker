@@ -10,7 +10,6 @@ dict_polarity = {}
 with open('./data/dict/pn_ja.dic.txt', 'r', encoding='shift_jis') as f:
     line = f.read()
     lines = line.split('\n')
-    print(dict_polarity)
     for i in range(len(lines)):
         line_components = lines[i].split(':')
         if len(line_components) >= 4:
