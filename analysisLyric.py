@@ -13,7 +13,7 @@ def analysis_lyric(lyric_text):
         obj = {
             "text": section,
             "rhyme_score":  rhyme_score,
-            "positive_score": 0
+            "positive_score": positive_score
         }
         line_feature.append(obj)
         if rhyme_score:
