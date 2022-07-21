@@ -23,8 +23,8 @@ def analysis_lyric(lyric_text):
 
     lyric_feature = {
         "lyrics_list": line_feature,
-        "total_rhyme_score": math.floor(total_rhyme_score/len(lyric_text)),
-        "total_positive_score": math.floor(total_positive_score/len(lyric_text)),
+        "total_rhyme_score":  None if len(lyric_text) == 0 else math.floor(total_rhyme_score/len(lyric_text)),
+        "total_positive_score": None if len(lyric_text) == 0 else math.floor(total_positive_score/len(lyric_text)),
         "word_cloud_data": {},
     }
 
