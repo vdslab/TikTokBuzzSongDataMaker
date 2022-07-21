@@ -45,7 +45,8 @@ def oseti_positive_score(section):
             positive_score += 50
         else:
             positive_score += posi/(posi+nega)*100
-    positive_score = math.floor(positive_score/len(result))
+    positive_score = None if len(result) == 0 else math.floor(
+        positive_score/len(result))
     return positive_score
 
 
