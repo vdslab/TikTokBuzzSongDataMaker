@@ -1,4 +1,5 @@
 from api import getAllPastSongs
+from analysis.randomForest import random_forest_classifier_maker, classify_data_by_random_forest
 # 分類器のアップデート？をする
 
 
@@ -32,3 +33,9 @@ def formatData(data):
 
 
 data = getAllPastSongs()
+formated_data = formatData(data)
+print(len(formated_data))
+# random_forest_classifier_maker(formated_data)
+res = classify_data_by_random_forest(formated_data[0:1])
+
+print(res)
