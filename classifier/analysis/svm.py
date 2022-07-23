@@ -43,6 +43,8 @@ def svm_classifier_maker(data):
     """
 
 
+# TODO:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
+# サイズ１の[{hogehoge}]が渡されてくることを想定
 def classify_data_by_svm(data):
     # モデルのオープン
     with open('./analysis/models/svm.pickle', mode='rb') as f:
