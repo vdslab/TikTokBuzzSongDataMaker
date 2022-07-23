@@ -71,6 +71,6 @@ def classify_data_by_svm(data):
     result = model.predict(X)
 
     if result[0]:
-        return True
+        return 1
     else:
-        return False
+        return 0

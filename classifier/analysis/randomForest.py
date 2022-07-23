@@ -57,6 +57,6 @@ def classify_data_by_random_forest(data):
     result = forest.predict(X)
 
     if result[0]:
-        return True
+        return 1
     else:
-        return False
+        return 0
