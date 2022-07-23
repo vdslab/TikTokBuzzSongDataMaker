@@ -1,8 +1,7 @@
-from classifier.analysis.formated import format_data
+from analysis.formated import format_data
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
-import seaborn as sns
-from formated import format_data
+from analysis.formated import format_data
 import pickle
 
 
@@ -51,7 +50,6 @@ def classify_data_by_svm(data):
 
     df = format_data(data)
 
-    df = format_data
     # 標準化インスタンス (平均=0, 標準偏差=1)
     standard_sc = StandardScaler()
 
