@@ -1,5 +1,8 @@
 from api import getAllPastSongs
-from analysis.randomForest import random_forest_classifier_maker, classify_data_by_random_forest
+from analysis.randomForest import random_forest_classifier_maker
+from analysis.logistic import logistic_classifier_maker
+from analysis.svm import svm_classifier_maker
+
 # 分類器のアップデート？をする
 
 
@@ -32,10 +35,16 @@ def formatData(data):
     return s_data
 
 
-data = getAllPastSongs()
-formated_data = formatData(data)
-print(len(formated_data))
-# random_forest_classifier_maker(formated_data)
-res = classify_data_by_random_forest(formated_data[0:1])
+def main():
+    data = getAllPastSongs()
+    formated_data = formatData(data)
 
-print(res)
+    random_forest_classifier_maker(formated_data)
+    logistic_classifier_maker(formated_data)
+    svm_classifier_maker(formated_data)
+
+    print("fin make_classitier")
+
+
+if __name__ == '__main__':
+    main()
