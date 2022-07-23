@@ -1,23 +1,8 @@
 from sklearn.metrics import mean_squared_error  # RMSE
 from sklearn.metrics import r2_score            # 決定係数
-import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 import pickle
-
-
-# tiktokランキングに入っているものが1, その他0
-def ranking_convert(x):
-    if int(x) <= 20:
-        return 1
-    else:
-        return 0
-
-
-def format_data(data):
-    df = pd.DataFrame(data)
-    # ランキングを01で
-    df["rank"] = df["rank"].apply(ranking_convert)
-    return df
+from formated import format_data
 
 
 # RandomForestの分類器を作る
