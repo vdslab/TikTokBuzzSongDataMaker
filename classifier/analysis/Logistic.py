@@ -35,7 +35,7 @@ def logistic_classifier_maker(data):
                                fit_intercept=True,    # バイアス項の計算要否
                                intercept_scaling=1,   # solver=‘liblinear’の際に有効なスケーリング基準値
                                class_weight=None,     # クラスに付与された重み
-                               random_state=None,     # 乱数シード
+                               random_state=1234,     # 乱数シード
                                solver='lbfgs',        # ハイパーパラメータ探索アルゴリズム
                                max_iter=100,          # 最大イテレーション数
                                multi_class='auto',    # クラスラベルの分類問題（2値問題の場合'auto'を指定）

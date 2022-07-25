@@ -15,7 +15,7 @@ def random_forest_classifier_maker(data):
     y = df["rank"]
 
     # ランダムフォレスト回帰
-    forest = RandomForestClassifier()
+    forest = RandomForestClassifier(random_state=1234)
     # モデル学習
     forest.fit(X, y)
 

@@ -26,7 +26,7 @@ def svm_classifier_maker(data):
     # 目的変数
     y = df["rank"]
 
-    model = SVC(kernel='linear', random_state=None)
+    model = SVC(kernel='linear', random_state=1234)
     model.fit(X, y)
 
     # 学習モデルの保存(path：classifierMaker.pyの所からの相対パス)
