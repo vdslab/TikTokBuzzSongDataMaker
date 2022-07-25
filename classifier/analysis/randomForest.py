@@ -2,7 +2,8 @@ from sklearn.metrics import mean_squared_error  # RMSE
 from sklearn.metrics import r2_score            # 決定係数
 from sklearn.ensemble import RandomForestClassifier
 import pickle
-from formated import format_data
+from .formated import format_data
+import pandas as pd
 
 
 # RandomForestの分類器を作る
@@ -10,7 +11,7 @@ def random_forest_classifier_maker(data):
     df = format_data(data)
 
     X = df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness",
-                   "speechiness", "instrumentalness", "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]].values
+                   "speechiness", "instrumentalness", "liveness", "key", "valence", "duration_ms", "time_signature"]].values
     y = df["rank"]
 
     # ランダムフォレスト回帰
@@ -19,7 +20,7 @@ def random_forest_classifier_maker(data):
     forest.fit(X, y)
 
     # 学習モデルの保存(path：classifierMaker.pyの所からの相対パス)
-    with open('./analysis/models/randomForestModel.pickle', mode='wb') as f:
+    with open('./classifier/analysis/models/randomForestModel.pickle', mode='wb') as f:
         pickle.dump(forest, f, protocol=2)
 
     """
@@ -46,13 +47,13 @@ def random_forest_classifier_maker(data):
 # サイズ１の[{hogehoge}]が渡されてくることを想定
 def classify_data_by_random_forest(data):
     # モデルのオープン
-    with open('./analysis/models/randomForestModel.pickle', mode='rb') as f:
+    with open('./classifier/analysis/models/randomForestModel.pickle', mode='rb') as f:
         forest = pickle.load(f)
 
-    df = format_data(data)
+    df = pd.DataFrame(data)
 
     X = df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness",
-                   "speechiness", "instrumentalness", "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]].values
+                   "speechiness", "instrumentalness", "liveness", "key", "valence", "duration_ms", "time_signature"]].values
 
     result = forest.predict(X)
 

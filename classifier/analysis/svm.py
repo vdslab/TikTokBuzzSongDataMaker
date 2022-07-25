@@ -1,8 +1,8 @@
-from analysis.formated import format_data
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
-from analysis.formated import format_data
+from .formated import format_data
 import pickle
+import pandas as pd
 
 
 def svm_classifier_maker(data):
@@ -23,7 +23,7 @@ def svm_classifier_maker(data):
 
     # 説明変数
     X = df[["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-            "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]]
+            "liveness", "key", "valence", "duration_ms", "time_signature"]]
 
     # 目的変数
     y = df["rank"]
@@ -32,7 +32,7 @@ def svm_classifier_maker(data):
     model.fit(X, y)
 
     # 学習モデルの保存(path：classifierMaker.pyの所からの相対パス)
-    with open('./analysis/models/svm.pickle', mode='wb') as f:
+    with open('./classifier/analysis/models/svm.pickle', mode='wb') as f:
         pickle.dump(model, f, protocol=2)
 
     """
@@ -47,10 +47,10 @@ def svm_classifier_maker(data):
 # サイズ１の[{hogehoge}]が渡されてくることを想定
 def classify_data_by_svm(data):
     # モデルのオープン
-    with open('./analysis/models/svm.pickle', mode='rb') as f:
+    with open('./classifier/analysis/models/svm.pickle', mode='rb') as f:
         model = pickle.load(f)
 
-    df = format_data(data)
+    df = pd.DataFrame(data)
 
     # 標準化インスタンス (平均=0, 標準偏差=1)
     standard_sc = StandardScaler()
@@ -66,7 +66,7 @@ def classify_data_by_svm(data):
 
     # 説明変数
     X = df[["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-            "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]]
+            "liveness", "key", "valence", "duration_ms", "time_signature"]]
 
     result = model.predict(X)
 
