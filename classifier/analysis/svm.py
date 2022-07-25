@@ -3,6 +3,7 @@ from sklearn.preprocessing import StandardScaler
 from .formated import format_data
 import pickle
 import pandas as pd
+from .common import ALL_FEATRUE, MUSIC_FEATURE
 
 
 def svm_classifier_maker(data):
@@ -13,17 +14,14 @@ def svm_classifier_maker(data):
     standard_sc = StandardScaler()
 
     # 01じゃないものを標準化
-    X = df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-                   "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]]
+    X = df.loc[:, ALL_FEATRUE]
     X = standard_sc.fit_transform(X)
 
     # 標準化後のデータ出力
-    df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-               "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]] = X
+    df.loc[:, ALL_FEATRUE] = X
 
     # 説明変数
-    X = df[["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-            "liveness", "key", "valence", "duration_ms", "time_signature"]]
+    X = df[MUSIC_FEATURE]
 
     # 目的変数
     y = df["rank"]
@@ -56,17 +54,14 @@ def classify_data_by_svm(data):
     standard_sc = StandardScaler()
 
     # 01じゃないものを標準化
-    X = df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-                   "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]]
+    X = df.loc[:, ALL_FEATRUE]
     X = standard_sc.fit_transform(X)
 
     # 標準化後のデータ出力
-    df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-               "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]] = X
+    df.loc[:, ALL_FEATRUE] = X
 
     # 説明変数
-    X = df[["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-            "liveness", "key", "valence", "duration_ms", "time_signature"]]
+    X = df[MUSIC_FEATURE]
 
     result = model.predict(X)
 

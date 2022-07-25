@@ -4,14 +4,14 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle
 from .formated import format_data
 import pandas as pd
+from .common import MUSIC_FEATURE
 
 
 # RandomForestの分類器を作る
 def random_forest_classifier_maker(data):
     df = format_data(data)
 
-    X = df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness",
-                   "speechiness", "instrumentalness", "liveness", "key", "valence", "duration_ms", "time_signature"]].values
+    X = df.loc[:, MUSIC_FEATURE].values
     y = df["rank"]
 
     # ランダムフォレスト回帰
@@ -52,8 +52,7 @@ def classify_data_by_random_forest(data):
 
     df = pd.DataFrame(data)
 
-    X = df.loc[:, ["tempo", "danceability", "energy", "mode", "loudness", "acousticness",
-                   "speechiness", "instrumentalness", "liveness", "key", "valence", "duration_ms", "time_signature"]].values
+    X = df.loc[:, MUSIC_FEATURE].values
 
     result = forest.predict(X)
 
