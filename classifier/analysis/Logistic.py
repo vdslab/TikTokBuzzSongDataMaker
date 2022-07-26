@@ -15,11 +15,11 @@ def logistic_classifier_maker(data):
     standard_sc = StandardScaler()
 
     # 01じゃないものを標準化
-    X = df.loc[:, ALL_FEATRUE]
+    X = df.loc[:, MUSIC_FEATURE]
     X = standard_sc.fit_transform(X)
 
     # 標準化後のデータ出力
-    df.loc[:, ALL_FEATRUE] = X
+    df.loc[:, MUSIC_FEATURE] = X
 
     # 説明変数
     X = df[MUSIC_FEATURE]
@@ -77,11 +77,11 @@ def classify_data_by_logistic(data):
     standard_sc = StandardScaler()
 
     # 01じゃないものを標準化
-    X = df.loc[:, ALL_FEATRUE]
+    X = df.loc[:, MUSIC_FEATURE]
     X = standard_sc.fit_transform(X)
 
     # 標準化後のデータ出力
-    df.loc[:, ALL_FEATRUE] = X
+    df.loc[:, MUSIC_FEATURE] = X
 
     # 説明変数
     X = df[MUSIC_FEATURE]

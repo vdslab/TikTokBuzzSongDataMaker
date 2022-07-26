@@ -20,17 +20,17 @@ def formatData(data):
         else:
             continue
          # TODO:歌詞データがないのを省くでいいのかどうか（現状は省いている）
-        if d["detail"].get("lyrics_feature"):
-            if d["detail"]["lyrics_feature"]["total_rhyme_score"] is None:
-                continue
-            else:
-                obj["total_rhyme_score"] = d["detail"]["lyrics_feature"]["total_rhyme_score"]
-            if d["detail"]["lyrics_feature"]["total_positive_score"] is None:
-                continue
-            else:
-                obj["total_positive_score"] = d["detail"]["lyrics_feature"]["total_positive_score"]
-        else:
-            continue
+        # if d["detail"].get("lyrics_feature"):
+        #     if d["detail"]["lyrics_feature"]["total_rhyme_score"] is None:
+        #         continue
+        #     else:
+        #         obj["total_rhyme_score"] = d["detail"]["lyrics_feature"]["total_rhyme_score"]
+        #     if d["detail"]["lyrics_feature"]["total_positive_score"] is None:
+        #         continue
+        #     else:
+        #         obj["total_positive_score"] = d["detail"]["lyrics_feature"]["total_positive_score"]
+        # else:
+        #     continue
         s_data.append(obj)
     return s_data
 
