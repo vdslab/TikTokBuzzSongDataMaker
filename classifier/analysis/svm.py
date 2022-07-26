@@ -1,5 +1,6 @@
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score
 from .formated import format_data
 import pickle
 import pandas as pd
@@ -9,13 +10,13 @@ from .common import ALL_FEATRUE, MUSIC_FEATURE
 def svm_classifier_maker(data):
     df = format_data(data)
 
-    # TODO:関数化
     # 標準化インスタンス (平均=0, 標準偏差=1)
     standard_sc = StandardScaler()
 
     # 01じゃないものを標準化
     X = df.loc[:, MUSIC_FEATURE]
-    X = standard_sc.fit_transform(X)
+    standard_sc.fit(X)
+    X = standard_sc.transform(X)
 
     # 標準化後のデータ出力
     df.loc[:, MUSIC_FEATURE] = X
@@ -33,6 +34,10 @@ def svm_classifier_maker(data):
     with open('./classifier/analysis/models/svm.pickle', mode='wb') as f:
         pickle.dump(model, f, protocol=2)
 
+    # 標準化関数の保存
+    pickle.dump(standard_sc, open(
+        "./classifier/analysis/models/svm_sc.p", "wb"))
+
     """
     # 出力
     y_train_pred = model.predict(X)
@@ -48,14 +53,15 @@ def classify_data_by_svm(data):
     with open('./classifier/analysis/models/svm.pickle', mode='rb') as f:
         model = pickle.load(f)
 
-    df = pd.DataFrame(data)
-
     # 標準化インスタンス (平均=0, 標準偏差=1)
-    standard_sc = StandardScaler()
+    standard_sc = pickle.load(
+        open('./classifier/analysis/models/svm_sc.p', "rb"))
+
+    df = pd.DataFrame(data)
 
     # 01じゃないものを標準化
     X = df.loc[:, MUSIC_FEATURE]
-    X = standard_sc.fit_transform(X)
+    X = standard_sc.transform(X)
 
     # 標準化後のデータ出力
     df.loc[:, MUSIC_FEATURE] = X

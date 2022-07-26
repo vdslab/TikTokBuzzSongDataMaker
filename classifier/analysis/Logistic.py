@@ -1,5 +1,6 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 from .formated import format_data
 import pickle
 import pandas as pd
@@ -16,7 +17,8 @@ def logistic_classifier_maker(data):
 
     # 01じゃないものを標準化
     X = df.loc[:, MUSIC_FEATURE]
-    X = standard_sc.fit_transform(X)
+    standard_sc.fit(X)
+    X = standard_sc.transform(X)
 
     # 標準化後のデータ出力
     df.loc[:, MUSIC_FEATURE] = X
@@ -53,15 +55,25 @@ def logistic_classifier_maker(data):
     with open('./classifier/analysis/models/logistic.pickle', mode='wb') as f:
         pickle.dump(model, f, protocol=2)
 
-    """
-    #結果の出力
+    # 標準化関数の保存
+    pickle.dump(standard_sc, open(
+        "./classifier/analysis/models/logistic_sc.p", "wb"))
+
+    # 結果の出力
     df_model = pd.DataFrame(
-        index=["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness", "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"])
+        index=MUSIC_FEATURE)
 
     df_model["偏回帰係数"] = model.coef_[0]
+    print(df_model)
+
+    Y_pred = model.predict(X)
+    print('confusion matrix = \n', confusion_matrix(y_true=y, y_pred=Y_pred))
+    print('accuracy = ', accuracy_score(y_true=y, y_pred=Y_pred))
+    print('precision = ', precision_score(y_true=y, y_pred=Y_pred))
+    print('recall = ', recall_score(y_true=y, y_pred=Y_pred))
+    print('f1 score = ', f1_score(y_true=y, y_pred=Y_pred))
 
     print("intercept: ", model.intercept_)
-    """
 
 
 # TODO:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
@@ -71,14 +83,15 @@ def classify_data_by_logistic(data):
     with open('./classifier/analysis/models/logistic.pickle', mode='rb') as f:
         model = pickle.load(f)
 
-    df = pd.DataFrame(data)
-
     # 標準化インスタンス (平均=0, 標準偏差=1)
-    standard_sc = StandardScaler()
+    standard_sc = pickle.load(
+        open('./classifier/analysis/models/logistic_sc.p', "rb"))
+
+    df = pd.DataFrame(data)
 
     # 01じゃないものを標準化
     X = df.loc[:, MUSIC_FEATURE]
-    X = standard_sc.fit_transform(X)
+    X = standard_sc.transform(X)
 
     # 標準化後のデータ出力
     df.loc[:, MUSIC_FEATURE] = X
