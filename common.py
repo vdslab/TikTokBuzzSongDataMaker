@@ -1,3 +1,4 @@
+# TODO:commonファイルの共通化
 ALL_FEATRUE = ["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
                "liveness", "key", "valence", "duration_ms", "time_signature", "total_rhyme_score", "total_positive_score"]
 
