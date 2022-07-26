@@ -5,6 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
 from getLyric import get_formated_lyric
 from analysisLyric import analysis_lyric
+import time
 
 load_dotenv()
 
@@ -63,5 +64,8 @@ def add_feature_and_formated_data(data_list, date):
             formated_data["genres"] = artist_info_list[0]["genres"]
 
         formated_data_list.append(formated_data)
+
+        # 気休めでのタイムエラー対策
+        time.sleep(1.5)
 
     return formated_data_list
