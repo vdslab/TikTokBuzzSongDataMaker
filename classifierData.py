@@ -17,7 +17,7 @@ def formatData(data):
                 obj[key] = d["music_feature"][key]
         else:
             continue
-        # TODO:歌詞データがないのを省くでいいのかどうか（現状は省いている）
+        # THINK:歌詞データがないのを省くでいいのかどうか（現状は省いている）
         # if d.get("lyrics_feature"):
         #     if d["lyrics_feature"]["total_rhyme_score"] is None:
         #         continue

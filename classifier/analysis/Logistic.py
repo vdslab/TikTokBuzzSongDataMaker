@@ -11,7 +11,7 @@ def logistic_classifier_maker(data):
 
     df = format_data(data)
 
-    # TODO:関数か
+    # HACK
     # 標準化インスタンス (平均=0, 標準偏差=1)
     standard_sc = StandardScaler()
 
@@ -76,7 +76,7 @@ def logistic_classifier_maker(data):
     print("intercept: ", model.intercept_)
 
 
-# TODO:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
+# THINK:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
 # サイズ１の[{hogehoge}]が渡されてくることを想定
 def classify_data_by_logistic(data):
     # モデルのオープン

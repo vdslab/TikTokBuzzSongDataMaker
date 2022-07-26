@@ -43,7 +43,7 @@ def random_forest_classifier_maker(data):
 
 
 # 実際にRandomForestで分類する
-# TODO:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
+# THINK:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
 # サイズ１の[{hogehoge}]が渡されてくることを想定
 def classify_data_by_random_forest(data):
     # モデルのオープン

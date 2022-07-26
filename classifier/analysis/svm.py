@@ -10,6 +10,7 @@ from .common import ALL_FEATRUE, MUSIC_FEATURE
 def svm_classifier_maker(data):
     df = format_data(data)
 
+    # HACK
     # 標準化インスタンス (平均=0, 標準偏差=1)
     standard_sc = StandardScaler()
 
@@ -46,7 +47,7 @@ def svm_classifier_maker(data):
     """
 
 
-# TODO:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
+# THINK:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
 # サイズ１の[{hogehoge}]が渡されてくることを想定
 def classify_data_by_svm(data):
     # モデルのオープン

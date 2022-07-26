@@ -103,6 +103,7 @@ def calc_section_rhyme_score(section):
 
 
 # TODO:この関数の削除かリファクタ
+# 現在未使用
 def calc_rhyme_score(data_section_div):
     data_sp = [[] for i in range(len(data_section_div))]
     for i in range(len(data_section_div)):

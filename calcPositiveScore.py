@@ -17,7 +17,7 @@ with open('./data/dict/pn_ja.dic.txt', 'r', encoding='shift_jis') as f:
 
 
 # ネガポジ分析用の関数の作成(ver2)
-# TODO:正規化
+# 現在未使用
 def judge_polarity(section):
     t = Tokenizer()
     pol_val = 0
@@ -33,7 +33,6 @@ def judge_polarity(section):
 
 
 # おせちでネガポジ分析
-# TODO:スコアの算出方法の検討
 def oseti_positive_score(section):
     data = " ".join(section)
     result = analyzer.count_polarity(data)

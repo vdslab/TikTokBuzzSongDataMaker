@@ -6,11 +6,8 @@ load_dotenv()
 
 API_KEY = os.getenv('MUSIXMATCH_API_KEY')
 
-"""
-TODO:全体的にエラーハンドリングが必要。どんな不足データが返ってくるか考えること。
-"""
 
-
+# REVIEW:全体的にエラーハンドリングが必要。どんな不足データが返ってくるか考えること。
 def get_lyric(title, artist):
     track_request_url = 'http://api.musixmatch.com/ws/1.1/track.search'
     track_request_params = {'apikey': API_KEY,
@@ -18,7 +15,7 @@ def get_lyric(title, artist):
     track_response = requests.get(
         track_request_url, params=track_request_params)
     track_info = track_response.json()
-    # TODO:エラーハンドリング
+    # エラーハンドリング
     if track_info["message"]["header"]["status_code"] != 200:
         return None
     if len(track_info["message"]["body"]["track_list"]) == 0:
@@ -28,7 +25,7 @@ def get_lyric(title, artist):
     lyric_request_url = 'http://api.musixmatch.com/ws/1.1/track.lyrics.get'
     lyric_request_params = {'apikey': API_KEY, 'track_id': track_id}
     lyric_response = requests.get(lyric_request_url, lyric_request_params)
-    # TODO:エラーハンドリング
+    # エラーハンドリング
     lyric_info = lyric_response.json()
     if lyric_info["message"]["header"]["status_code"] != 200:
         return None
