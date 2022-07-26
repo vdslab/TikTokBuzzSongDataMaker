@@ -2,12 +2,12 @@ from classifier.analysis.logistic import classify_data_by_logistic
 from classifier.analysis.randomForest import classify_data_by_random_forest
 from classifier.analysis.svm import classify_data_by_svm
 import math
+from common import MUSIC_FEATURE
 
 
 # TODO:このデータの整形をなしの形でapiからとってきたい
 def formatData(data):
-    music_feature_key = ['danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
-                         'instrumentalness', 'liveness', 'valence', 'tempo', 'duration_ms', 'time_signature']
+    music_feature_key = MUSIC_FEATURE
     s_data = []
     for d in data:
         obj = dict()
@@ -17,18 +17,18 @@ def formatData(data):
                 obj[key] = d["music_feature"][key]
         else:
             continue
-         # TODO:歌詞データがないのを省くでいいのかどうか（現状は省いている）
-        if d.get("lyrics_feature"):
-            if d["lyrics_feature"]["total_rhyme_score"] is None:
-                continue
-            else:
-                obj["total_rhyme_score"] = d["lyrics_feature"]["total_rhyme_score"]
-            if d["lyrics_feature"]["total_positive_score"] is None:
-                continue
-            else:
-                obj["total_positive_score"] = d["lyrics_feature"]["total_positive_score"]
-        else:
-            continue
+        # TODO:歌詞データがないのを省くでいいのかどうか（現状は省いている）
+        # if d.get("lyrics_feature"):
+        #     if d["lyrics_feature"]["total_rhyme_score"] is None:
+        #         continue
+        #     else:
+        #         obj["total_rhyme_score"] = d["lyrics_feature"]["total_rhyme_score"]
+        #     if d["lyrics_feature"]["total_positive_score"] is None:
+        #         continue
+        #     else:
+        #         obj["total_positive_score"] = d["lyrics_feature"]["total_positive_score"]
+        # else:
+        #     continue
         s_data.append(obj)
     return s_data
 
