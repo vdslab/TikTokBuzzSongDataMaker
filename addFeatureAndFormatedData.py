@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 from getLyric import get_formated_lyric
 from analysisLyric import analysis_lyric
 import time
+from common import MUSIC_FEATURE
 
 load_dotenv()
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
     client_id=os.getenv('SPOTIFY_CLIENT_ID'), client_secret=os.getenv('SPOTIFY_CLIENT_SECRET_ID')), requests_timeout=5)
-json_key_name = ['danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
-                 'instrumentalness', 'liveness', 'valence', 'tempo', 'duration_ms', 'time_signature']
+json_key_name = MUSIC_FEATURE
 
 
 def add_feature_and_formated_data(data_list, date):
