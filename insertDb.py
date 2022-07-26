@@ -1,6 +1,5 @@
 import json
 from api import getAllSongsId
-from memo import res
 from api import post_buzz_songs_one, post_songs_one
 import time
 
@@ -14,6 +13,12 @@ def div_data(data):
     ids = [d["id"] for d in ids]
 
     for d in data:
+        buzz_song = dict()
+        buzz_song["id"] = d["id"]
+        buzz_song["date"] = d["date"]
+        buzz_song["rank"] = d["rank"]
+        buzz_songs.append(buzz_song)
+
         hadId = d["id"] in (ids)
         if hadId:
             continue
@@ -28,13 +33,7 @@ def div_data(data):
         song["music_feature"] = json.dumps(d["music_feature"])
         song["lyrics_feature"] = json.dumps(d["lyrics_feature"])
 
-        buzz_song = dict()
-        buzz_song["id"] = d["id"]
-        buzz_song["date"] = d["date"]
-        buzz_song["rank"] = d["rank"]
-
         songs.append(song)
-        buzz_songs.append(buzz_song)
 
     return {"songs": songs, "buzz_songs": buzz_songs}
 
