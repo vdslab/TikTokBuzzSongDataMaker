@@ -60,6 +60,7 @@ def logistic_classifier_maker(data):
         "./classifier/analysis/models/logistic_sc.p", "wb"))
 
     # 結果の出力
+    """
     df_model = pd.DataFrame(
         index=MUSIC_FEATURE)
 
@@ -72,8 +73,8 @@ def logistic_classifier_maker(data):
     print('precision = ', precision_score(y_true=y, y_pred=Y_pred))
     print('recall = ', recall_score(y_true=y, y_pred=Y_pred))
     print('f1 score = ', f1_score(y_true=y, y_pred=Y_pred))
-
     print("intercept: ", model.intercept_)
+    """
 
 
 # THINK:現状引数にリストを渡さないといけないので、オブジェクト1つでもできるように
@@ -105,3 +106,18 @@ def classify_data_by_logistic(data):
         return 1
     else:
         return 0
+
+
+def get_logistic_importance():
+    with open('./classifier/analysis/models/logistic.pickle', mode='rb') as f:
+        model = pickle.load(f)
+
+    fti = model.coef_[0]
+
+    importance_abs_dic = dict()
+    for i in range(len(fti)):
+        importance_abs_dic[MUSIC_FEATURE[i]] = abs(fti[i])
+    importance_abs_dic = sorted(
+        importance_abs_dic.items(), key=lambda x: x[1], reverse=True)
+
+    return importance_abs_dic

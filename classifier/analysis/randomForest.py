@@ -60,3 +60,19 @@ def classify_data_by_random_forest(data):
         return 1
     else:
         return 0
+
+
+def get_random_forest_importance():
+    # モデルのオープン
+    with open('./classifier/analysis/models/randomForestModel.pickle', mode='rb') as f:
+        forest = pickle.load(f)
+
+    # Feature Importance
+    fti = forest.feature_importances_
+    importance_abs_dic = dict()
+    for i in range(len(fti)):
+        importance_abs_dic[MUSIC_FEATURE[i]] = abs(fti[i])
+    importance_abs_dic = sorted(
+        importance_abs_dic.items(), key=lambda x: x[1], reverse=True)
+
+    return importance_abs_dic
