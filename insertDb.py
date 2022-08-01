@@ -16,7 +16,7 @@ def div_data(data):
         buzz_song = dict()
         buzz_song["id"] = d["id"]
         buzz_song["date"] = d["date"]
-        buzz_song["rank"] = d["rank"]
+        buzz_song["rank"] = int(d["rank"])
         buzz_songs.append(buzz_song)
 
         hadId = d["id"] in (ids)
