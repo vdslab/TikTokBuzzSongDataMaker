@@ -25,11 +25,13 @@ def add_feature_and_formated_data(data_list, date):
         song_features = sp.audio_features(id)
         artists_info = sp.track(id)["artists"][0]
         preview_url = sp.track(id)["preview_url"]
+        img_url = sp.track(id)["album"]["images"][0]["url"]
 
         formated_data["id"] = id
         formated_data["title"] = data["track_name"]
         formated_data["date"] = date
         formated_data["preview_url"] = preview_url
+        formated_data["img_url"] = img_url
         formated_data["artist"] = artists_info["name"]
         formated_data["artist_uri"] = artists_info["uri"][15:]
 

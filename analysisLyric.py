@@ -1,6 +1,7 @@
 from calcRhymeScore import calc_section_rhyme_score
 from calcPositiveScore import calc_section_positive_score
 import math
+from generateWordCloudData import get_negaposi_tf_word_data
 
 
 def analysis_lyric(lyric_text):
@@ -25,7 +26,7 @@ def analysis_lyric(lyric_text):
         "lyrics_list": line_feature,
         "total_rhyme_score":  None if len(lyric_text) == 0 else math.floor(total_rhyme_score/len(lyric_text)),
         "total_positive_score": None if len(lyric_text) == 0 else math.floor(total_positive_score/len(lyric_text)),
-        "word_cloud_data": {},
+        "word_cloud_data": get_negaposi_tf_word_data(lyric_text),
     }
 
     return lyric_feature
