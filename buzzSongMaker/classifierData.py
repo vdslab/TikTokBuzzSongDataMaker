@@ -1,3 +1,9 @@
+import os
+import sys
+sys.path.append("/Users/watam1/Desktop/大学/onoue_labo/TikTokBuzzSongDataMaker")
+print(sys.path)
+
+###
 from classifier.analysis.logistic import classify_data_by_logistic
 from classifier.analysis.randomForest import classify_data_by_random_forest
 from classifier.analysis.svm import classify_data_by_svm
