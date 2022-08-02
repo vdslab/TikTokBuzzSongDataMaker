@@ -1,13 +1,16 @@
 import oseti
 from janome.tokenizer import Tokenizer
 import math
+import os
+
+file_path = os.path.dirname(os.path.realpath(__file__))
 
 # おせち
 analyzer = oseti.Analyzer()
 
 # 極性辞書の作成
 dict_polarity = {}
-with open('./data/dict/pn_ja.dic.txt', 'r', encoding='shift_jis') as f:
+with open(file_path+'/data/dict/pn_ja.dic.txt', 'r', encoding='shift_jis') as f:
     line = f.read()
     lines = line.split('\n')
     for i in range(len(lines)):
