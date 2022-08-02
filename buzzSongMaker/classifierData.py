@@ -2,9 +2,7 @@ import sys
 from pathlib import Path
 parent_file_path = str(Path('__file__').resolve().parent)
 sys.path.append(parent_file_path)
-print(sys.path)
-print()
-print(parent_file_path)
+
 from classifier.analysis.logistic import classify_data_by_logistic
 from classifier.analysis.randomForest import classify_data_by_random_forest
 from classifier.analysis.svm import classify_data_by_svm
