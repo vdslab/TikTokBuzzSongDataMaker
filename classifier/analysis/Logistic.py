@@ -55,12 +55,12 @@ def logistic_classifier_maker(data):
     model.fit(X, y)
 
     # 学習モデルの保存(path：classifierMaker.pyの所からの相対パス)
-    with open('./analysis/models/logistic.pickle', mode='wb') as f:
+    with open(file_path+'/models/logistic.pickle', mode='wb') as f:
         pickle.dump(model, f, protocol=2)
 
     # 標準化関数の保存
     pickle.dump(standard_sc, open(
-        "./analysis/models/logistic_sc.p", "wb"))
+        file_path+"/models/logistic_sc.p", "wb"))
 
     # 結果の出力
     """

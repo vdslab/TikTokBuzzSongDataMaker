@@ -23,7 +23,7 @@ def random_forest_classifier_maker(data):
     forest.fit(X, y)
 
     # 学習モデルの保存
-    with open('./analysis/models/randomForestModel.pickle', mode='wb') as f:
+    with open(file_path+'/models/randomForestModel.pickle', mode='wb') as f:
         pickle.dump(forest, f, protocol=2)
 
     """
