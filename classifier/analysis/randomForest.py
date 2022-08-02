@@ -5,6 +5,9 @@ import pickle
 from .formated import format_data
 import pandas as pd
 from .common import MUSIC_FEATURE
+import os
+
+file_path = os.path.dirname(os.path.realpath(__file__))
 
 
 # RandomForestの分類器を作る
@@ -19,8 +22,8 @@ def random_forest_classifier_maker(data):
     # モデル学習
     forest.fit(X, y)
 
-    # 学習モデルの保存(path：classifierMaker.pyの所からの相対パス)
-    with open('./classifier/analysis/models/randomForestModel.pickle', mode='wb') as f:
+    # 学習モデルの保存
+    with open('./analysis/models/randomForestModel.pickle', mode='wb') as f:
         pickle.dump(forest, f, protocol=2)
 
     """
@@ -47,7 +50,7 @@ def random_forest_classifier_maker(data):
 # サイズ１の[{hogehoge}]が渡されてくることを想定
 def classify_data_by_random_forest(data):
     # モデルのオープン
-    with open('./classifier/analysis/models/randomForestModel.pickle', mode='rb') as f:
+    with open(file_path+'/models/randomForestModel.pickle', mode='rb') as f:
         forest = pickle.load(f)
 
     df = pd.DataFrame(data)
@@ -64,7 +67,7 @@ def classify_data_by_random_forest(data):
 
 def get_random_forest_importance():
     # モデルのオープン
-    with open('./classifier/analysis/models/randomForestModel.pickle', mode='rb') as f:
+    with open(file_path+'/models/randomForestModel.pickle', mode='rb') as f:
         forest = pickle.load(f)
 
     # Feature Importance

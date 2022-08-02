@@ -1,9 +1,8 @@
-import os
 import sys
-sys.path.append("/Users/watam1/Desktop/大学/onoue_labo/TikTokBuzzSongDataMaker")
-print(sys.path)
+from pathlib import Path
+parent_file_path = str(Path('__file__').resolve().parent.parent)
+sys.path.append(parent_file_path)
 
-###
 from classifier.analysis.logistic import classify_data_by_logistic
 from classifier.analysis.randomForest import classify_data_by_random_forest
 from classifier.analysis.svm import classify_data_by_svm
