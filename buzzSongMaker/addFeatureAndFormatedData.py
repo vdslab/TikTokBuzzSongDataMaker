@@ -3,7 +3,6 @@ import os
 file_path = os.path.dirname(__file__);
 sys.path.append(file_path)
 
-from tkinter.tix import ROW
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
