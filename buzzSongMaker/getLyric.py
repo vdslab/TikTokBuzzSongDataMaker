@@ -52,5 +52,7 @@ def get_formated_lyric(title, artist):
     for i in range(len(lyric_section_div)):
         lyric_sp[i] = lyric_section_div[i].replace('.', ' ').split()
     # MUST：有料APIにしたら削除する(無料枠ではここまでと文字が出力されているため)
-    lyric_sp.pop(-1)
+    if len(lyric_sp) > 0:
+        lyric_sp.pop(-1)
+
     return lyric_sp

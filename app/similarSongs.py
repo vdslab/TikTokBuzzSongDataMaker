@@ -27,7 +27,7 @@ def get_similar_buzz_song_list(song_id):
     for song in similar_songs:
         song_info = get_song_info(song["id"])
         similar_feature_data_list.append(song_info)
-        time.sleep(0.5)
+        time.sleep(1.0)
 
     classifiered_data = classifier_data(similar_feature_data_list)
 
