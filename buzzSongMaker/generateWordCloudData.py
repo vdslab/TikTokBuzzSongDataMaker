@@ -60,11 +60,12 @@ def add_negaposi_score(data):
     added_negaposi_data = []
     for word in data:
         negaposi = analyzer.analyze(word[0])
-        obj = {
-            "word": word[0],
-            "score": word[1],
-            "negaposi": negaposi[0]}
-        added_negaposi_data.append(obj)
+        if len(negaposi) > 0:
+            obj = {
+                "word": word[0],
+                "score": word[1],
+                "negaposi": negaposi[0]}
+            added_negaposi_data.append(obj)
     return added_negaposi_data
 
 

@@ -7,9 +7,8 @@ from classifier.analysis.logistic import classify_data_by_logistic
 from classifier.analysis.randomForest import classify_data_by_random_forest
 from classifier.analysis.svm import classify_data_by_svm
 import math
-# from common import MUSIC_FEATURE
-MUSIC_FEATURE = ["tempo", "danceability", "energy", "mode", "loudness", "acousticness", "speechiness", "instrumentalness",
-                 "liveness", "key", "valence", "duration_ms", "time_signature"]
+from common import MUSIC_FEATURE
+
 
 
 # TODO:このデータの整形をなしの形でapiからとってきたい

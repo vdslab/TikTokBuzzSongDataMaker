@@ -2,8 +2,9 @@ from filterPopularSong import filter_popular_song
 from addFeatureAndFormatedData import add_feature_and_formated_data
 from classifierData import classifier_data
 from insertDb import insertDb
-
-file_name = "./data/regional-jp-weekly-2022-07-07.csv"
+import os
+file_path = os.path.dirname(os.path.realpath(__file__))
+file_name = file_path+"/data/regional-jp-weekly-2022-07-07.csv"
 
 # チャートの中からNEW, RE-ENTRY, up15のものに絞る
 filterd_data = filter_popular_song(file_name)
