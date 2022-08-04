@@ -1,9 +1,4 @@
 import os
-import sys
-from pathlib import Path
-parent_file_path = str(Path('__file__').resolve().parent)
-sys.path.append(parent_file_path)
-
 from similarSongs import get_similar_buzz_song_list
 from buzzSongMaker.classifierData import get_classifier_score
 from buzzSongMaker.addFeatureAndFormatedData import get_song_info
