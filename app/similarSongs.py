@@ -1,10 +1,4 @@
 import os
-import sys
-from pathlib import Path
-parent_file_path = str(Path('__file__').resolve().parent)
-sys.path.append(parent_file_path)
-sys.path.append("/")
-#from common import MUSIC_FEATURE
 from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
