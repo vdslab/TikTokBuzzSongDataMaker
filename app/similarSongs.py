@@ -25,5 +25,7 @@ def get_similar_buzz_song_list(song_id):
         time.sleep(0.5)
 
     classifiered_data = classifier_data(similar_feature_data_list)
+    sorted_data = sorted(
+        classifiered_data, key=lambda x: int(x["rank"]), reverse=True)
 
-    return classifiered_data
+    return sorted_data
