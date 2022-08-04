@@ -1,44 +1,42 @@
 import sys
 from pathlib import Path
-# parent_file_path = str(Path('__file__').resolve().parent.parent)
-# sys.path.append(parent_file_path)
-
 from random import random
 from classifier.analysis.randomForest import get_random_forest_importance, random_forest_classifier_maker
 from classifier.analysis.logistic import get_logistic_importance
 from collections import Counter
 from common import MUSIC_FEATURE
+from sklearn import preprocessing
+import json
 
 
+# TODO:makerの中に組み込む
 # THINK:結局どうしよう
-
-# TODO:正規化してたす
 def get_show_feature():
-    show_feature = []
-    feature_count = Counter()
-    importance_len = 4
     random_forest_importance = get_random_forest_importance()
     logistic_importance = get_logistic_importance()
-    # print(random_forest_importance)
-    # print(logistic_importance)
-    while len(show_feature) < len(MUSIC_FEATURE):
-        random_forest_importance_top = random_forest_importance[:importance_len]
-        logistic_importance_top = logistic_importance[:importance_len]
-        for i in range(importance_len):
-            feature_count[random_forest_importance_top[i][0]] += 1
-            feature_count[logistic_importance_top[i][0]] += 1
-        for feature in feature_count:
-            if feature_count[feature] == 2:
-                show_feature.append(feature)
-        importance_len += 1
-        print("---------------------")
-        print(random_forest_importance_top)
-        print()
-        print(logistic_importance_top)
-        print()
-        print(show_feature)
+    random_forest_importance_value = list(random_forest_importance.values())
+    logistic_importance_value = list(logistic_importance.values())
+    random_forest_importance_value = list(preprocessing.minmax_scale(
+        random_forest_importance_value))
+    logistic_importance_value = list(preprocessing.minmax_scale(
+        logistic_importance_value))
 
-    return show_feature
+    sum_value = dict()
+    for i in range(len(random_forest_importance_value)):
+        p = random_forest_importance_value[i]+logistic_importance_value[i]
+        sum_value[MUSIC_FEATURE[i]] = p
+
+    sum_value = sorted(
+        sum_value.items(), key=lambda x: x[1], reverse=True)
+
+    priority_feature = []
+    for i in range(len(sum_value)):
+        obj = {sum_value[i][0]: sum_value[i][1]}
+        priority_feature.append(obj)
+
+    with open('./data/test/priority_feature.json', 'w', encoding='utf-8') as f:
+        json.dump(json.dumps(priority_feature),
+                  f, indent=2, ensure_ascii=False)
 
 
 get_show_feature()
