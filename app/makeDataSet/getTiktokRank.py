@@ -23,7 +23,7 @@ def create_tiktok_rank_data(year, month, day):
     for r, title, artist in zip(ranking, music_title, artists):
         r = r.select_one('span')
         ranking_info = {}
-        ranking_info['ranking'] = r.text
+        ranking_info['rank'] = r.text
         ranking_info['title'] = title.text
         ranking_info['artist'] = artist.text
         ranking_info['id'] = search_spotify.search_spotify_url(title.text)
@@ -45,7 +45,7 @@ def main():
     # date = datetime.date(2021, 12, 13)
     # end = datetime.date(2022, 5, 16)
     date = datetime.date(2022, 5, 23)
-    end = datetime.date(2022, 5, 31)
+    end = datetime.date(2022, 10, 31)
     while date <= end:
         print(date)
         year = date.year

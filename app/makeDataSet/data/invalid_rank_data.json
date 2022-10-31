@@ -1,6 +1,6 @@
 [
   {
-    "ranking": "3",
+    "rank": "3",
     "title": "タイミング 〜Timing〜",
     "artist": "Klang Ruler",
     "id": null,
@@ -8,7 +8,7 @@
     "date": "2022/5/23"
   },
   {
-    "ranking": "5",
+    "rank": "5",
     "title": "Habit",
     "artist": "SEKAI NO OWARI",
     "id": null,
@@ -16,7 +16,7 @@
     "date": "2022/5/23"
   },
   {
-    "ranking": "6",
+    "rank": "6",
     "title": "Love Is Gone (Acoustic)",
     "artist": "スランダー & Dylan Matthew",
     "id": null,
@@ -24,7 +24,7 @@
     "date": "2022/5/23"
   },
   {
-    "ranking": "8",
+    "rank": "8",
     "title": "Se Acabo (Remix)",
     "artist": "The Beatnuts feat. メソッド・マン",
     "id": null,
@@ -32,7 +32,7 @@
     "date": "2022/5/23"
   },
   {
-    "ranking": "9",
+    "rank": "9",
     "title": "Partner",
     "artist": "有華",
     "id": null,
@@ -40,7 +40,7 @@
     "date": "2022/5/23"
   },
   {
-    "ranking": "11",
+    "rank": "11",
     "title": "GAL (feat. Shake Pepper & Yvngboi P) [Mixed]",
     "artist": "Ohayo",
     "id": null,
@@ -48,7 +48,7 @@
     "date": "2022/5/23"
   },
   {
-    "ranking": "19",
+    "rank": "19",
     "title": "Athletic Meet \"Heaven and Hell\"",
     "artist": "Shinonome",
     "id": null,
@@ -56,7 +56,7 @@
     "date": "2022/5/23"
   },
   {
-    "ranking": "2",
+    "rank": "2",
     "title": "Habit",
     "artist": "SEKAI NO OWARI",
     "id": null,
@@ -64,7 +64,7 @@
     "date": "2022/5/30"
   },
   {
-    "ranking": "4",
+    "rank": "4",
     "title": "Partner",
     "artist": "有華",
     "id": null,
@@ -72,7 +72,7 @@
     "date": "2022/5/30"
   },
   {
-    "ranking": "5",
+    "rank": "5",
     "title": "Se Acabo (feat. Method Man) (Remix)",
     "artist": "The Beatnuts",
     "id": null,
@@ -80,7 +80,7 @@
     "date": "2022/5/30"
   },
   {
-    "ranking": "6",
+    "rank": "6",
     "title": "タイミング 〜Timing〜",
     "artist": "Klang Ruler",
     "id": null,
@@ -88,7 +88,7 @@
     "date": "2022/5/30"
   },
   {
-    "ranking": "7",
+    "rank": "7",
     "title": "番狂わせ",
     "artist": "Hump Back",
     "id": null,
@@ -96,7 +96,7 @@
     "date": "2022/5/30"
   },
   {
-    "ranking": "12",
+    "rank": "12",
     "title": "千と千尋の神隠し Spirited Away - いつも何度でも Itsumo Nandodemo (Always with Me)",
     "artist": "JAZZ RIVER LIGHT",
     "id": null,
@@ -104,7 +104,7 @@
     "date": "2022/5/30"
   },
   {
-    "ranking": "14",
+    "rank": "14",
     "title": "Love Is Gone (Acoustic)",
     "artist": "スランダー & Dylan Matthew",
     "id": null,
@@ -112,11 +112,1739 @@
     "date": "2022/5/30"
   },
   {
-    "ranking": "18",
+    "rank": "18",
     "title": "GAL (feat. Shake Pepper & Yvngboi P) [Mixed]",
     "artist": "Ohayo",
     "id": null,
     "url": null,
     "date": "2022/5/30"
+  },
+  {
+    "rank": "2",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/6/6"
+  },
+  {
+    "rank": "3",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/6/6"
+  },
+  {
+    "rank": "5",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/6/6"
+  },
+  {
+    "rank": "7",
+    "title": "ジャンキー",
+    "artist": "フレデリック",
+    "id": null,
+    "url": null,
+    "date": "2022/6/6"
+  },
+  {
+    "rank": "8",
+    "title": "タイミング 〜Timing〜",
+    "artist": "Klang Ruler",
+    "id": null,
+    "url": null,
+    "date": "2022/6/6"
+  },
+  {
+    "rank": "15",
+    "title": "はじめのいっぽ",
+    "artist": "konokichi",
+    "id": null,
+    "url": null,
+    "date": "2022/6/6"
+  },
+  {
+    "rank": "17",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/6/6"
+  },
+  {
+    "rank": "2",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/6/13"
+  },
+  {
+    "rank": "3",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/6/13"
+  },
+  {
+    "rank": "5",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/6/13"
+  },
+  {
+    "rank": "6",
+    "title": "優しさに溢れた世界で",
+    "artist": "Saucy Dog",
+    "id": "404",
+    "url": "404",
+    "date": "2022/6/13"
+  },
+  {
+    "rank": "7",
+    "title": "タイミング 〜Timing〜",
+    "artist": "Klang Ruler",
+    "id": null,
+    "url": null,
+    "date": "2022/6/13"
+  },
+  {
+    "rank": "16",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/6/13"
+  },
+  {
+    "rank": "18",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/6/13"
+  },
+  {
+    "rank": "3",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "4",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "5",
+    "title": "優しさに溢れた世界で",
+    "artist": "Saucy Dog",
+    "id": "404",
+    "url": "404",
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "7",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "10",
+    "title": "タイミング 〜Timing〜",
+    "artist": "Klang Ruler",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "11",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "15",
+    "title": "magic!",
+    "artist": "Little Glee Monster",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "18",
+    "title": "はじめのいっぽ",
+    "artist": "konokichi",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "19",
+    "title": "カリフォルニア・ガールズ feat.スヌープ・ドッグ",
+    "artist": "ケイティ・ペリー",
+    "id": null,
+    "url": null,
+    "date": "2022/6/20"
+  },
+  {
+    "rank": "2",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/6/27"
+  },
+  {
+    "rank": "4",
+    "title": "ichiban",
+    "artist": "King & Prince",
+    "id": null,
+    "url": null,
+    "date": "2022/6/27"
+  },
+  {
+    "rank": "5",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/6/27"
+  },
+  {
+    "rank": "6",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/6/27"
+  },
+  {
+    "rank": "7",
+    "title": "カリフォルニア・ガールズ feat.スヌープ・ドッグ",
+    "artist": "ケイティ・ペリー",
+    "id": null,
+    "url": null,
+    "date": "2022/6/27"
+  },
+  {
+    "rank": "11",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/6/27"
+  },
+  {
+    "rank": "12",
+    "title": "タイミング 〜Timing〜",
+    "artist": "Klang Ruler",
+    "id": null,
+    "url": null,
+    "date": "2022/6/27"
+  },
+  {
+    "rank": "2",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/7/4"
+  },
+  {
+    "rank": "3",
+    "title": "ichiban",
+    "artist": "King & Prince",
+    "id": null,
+    "url": null,
+    "date": "2022/7/4"
+  },
+  {
+    "rank": "4",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/7/4"
+  },
+  {
+    "rank": "7",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/7/4"
+  },
+  {
+    "rank": "10",
+    "title": "カリフォルニア・ガールズ feat.スヌープ・ドッグ",
+    "artist": "ケイティ・ペリー",
+    "id": null,
+    "url": null,
+    "date": "2022/7/4"
+  },
+  {
+    "rank": "11",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/7/4"
+  },
+  {
+    "rank": "15",
+    "title": "タイミング 〜Timing〜",
+    "artist": "Klang Ruler",
+    "id": null,
+    "url": null,
+    "date": "2022/7/4"
+  },
+  {
+    "rank": "1",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "3",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "4",
+    "title": "ichiban",
+    "artist": "King & Prince",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "5",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "6",
+    "title": "ショッピンGoo",
+    "artist": "PAIN",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "7",
+    "title": "Za ABC〜5stars〜",
+    "artist": "A.B.C-Z",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "8",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "10",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "11",
+    "title": "カリフォルニア・ガールズ feat.スヌープ・ドッグ",
+    "artist": "ケイティ・ペリー",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "16",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "20",
+    "title": "タイミング 〜Timing〜",
+    "artist": "Klang Ruler",
+    "id": null,
+    "url": null,
+    "date": "2022/7/11"
+  },
+  {
+    "rank": "1",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "3",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "4",
+    "title": "ショッピンGoo",
+    "artist": "PAIN",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "6",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "7",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "9",
+    "title": "ichiban",
+    "artist": "King & Prince",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "10",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "13",
+    "title": "SOUL 2 SOUL",
+    "artist": "ジャニーズWEST",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "16",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "19",
+    "title": "カリフォルニア・ガールズ feat.スヌープ・ドッグ",
+    "artist": "ケイティ・ペリー",
+    "id": null,
+    "url": null,
+    "date": "2022/7/18"
+  },
+  {
+    "rank": "1",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "2",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "5",
+    "title": "ショッピンGoo",
+    "artist": "PAIN",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "6",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "7",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "11",
+    "title": "ichiban",
+    "artist": "King & Prince",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "14",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "18",
+    "title": "Se Acabo (feat. Method Man) (Remix)",
+    "artist": "The Beatnuts",
+    "id": null,
+    "url": null,
+    "date": "2022/7/25"
+  },
+  {
+    "rank": "1",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "2",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "5",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "7",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "8",
+    "title": "ショッピンGoo",
+    "artist": "PAIN",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "9",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "10",
+    "title": "You",
+    "artist": "多部大",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "15",
+    "title": "ichiban",
+    "artist": "King & Prince",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "17",
+    "title": "Partner",
+    "artist": "有華",
+    "id": null,
+    "url": null,
+    "date": "2022/8/1"
+  },
+  {
+    "rank": "1",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "2",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "3",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "7",
+    "title": "You",
+    "artist": "多部大",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "8",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "13",
+    "title": "ショッピンGoo",
+    "artist": "PAIN",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "15",
+    "title": "コットンキャンディえいえいおー！",
+    "artist": "黒澤ルビィ(降幡愛) from Aqours",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "16",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "19",
+    "title": "ichiban",
+    "artist": "King & Prince",
+    "id": null,
+    "url": null,
+    "date": "2022/8/8"
+  },
+  {
+    "rank": "2",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "3",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "4",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "6",
+    "title": "You",
+    "artist": "多部大",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "10",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "12",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "17",
+    "title": "コットンキャンディえいえいおー！",
+    "artist": "黒澤ルビィ(降幡愛) from Aqours",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "19",
+    "title": "ショッピンGoo",
+    "artist": "PAIN",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "20",
+    "title": "FRIEND (feat. 友達)",
+    "artist": "重盛さと美",
+    "id": null,
+    "url": null,
+    "date": "2022/8/15"
+  },
+  {
+    "rank": "2",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "4",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "6",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "8",
+    "title": "You",
+    "artist": "多部大",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "9",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "13",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "14",
+    "title": "とろける哲学",
+    "artist": "長瀬有花",
+    "id": "404",
+    "url": "404",
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "17",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "18",
+    "title": "タンタカタンタンタンタンメン",
+    "artist": "ぼっちぼろまる",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "20",
+    "title": "Habit",
+    "artist": "SEKAI NO OWARI",
+    "id": null,
+    "url": null,
+    "date": "2022/8/22"
+  },
+  {
+    "rank": "2",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "5",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "6",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "7",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "8",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "10",
+    "title": "You",
+    "artist": "多部大",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "11",
+    "title": "JUICY",
+    "artist": "Snow Man",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "12",
+    "title": "タンタカタンタンタンタンメン",
+    "artist": "ぼっちぼろまる",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "17",
+    "title": "ちゅきちゅきハリケーン",
+    "artist": "なにわ男子",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "18",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/8/29"
+  },
+  {
+    "rank": "2",
+    "title": "JUICY",
+    "artist": "Snow Man",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "3",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "5",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "7",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "8",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "9",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "11",
+    "title": "タンタカタンタンタンタンメン",
+    "artist": "ぼっちぼろまる",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "14",
+    "title": "You",
+    "artist": "多部大",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "15",
+    "title": "死ぬのがいいわ",
+    "artist": "藤井風",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "17",
+    "title": "はじまり",
+    "artist": "Gaho",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "18",
+    "title": "Athletic Meet \"Heaven and Hell\" (No Introduction)",
+    "artist": "シノノメ",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "19",
+    "title": "カラノココロ (Matt Cab & MATZ Remix)",
+    "artist": "Anly",
+    "id": null,
+    "url": null,
+    "date": "2022/9/5"
+  },
+  {
+    "rank": "4",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "5",
+    "title": "タンタカタンタンタンタンメン",
+    "artist": "ぼっちぼろまる",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "7",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "8",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "9",
+    "title": "JUICY",
+    "artist": "Snow Man",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "10",
+    "title": "XOXO (feat. SPRITE)",
+    "artist": "Repezen Foxx",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "11",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "13",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "15",
+    "title": "はじまり",
+    "artist": "Gaho",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "20",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/9/12"
+  },
+  {
+    "rank": "3",
+    "title": "もう一度",
+    "artist": "Tani Yuuki",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "5",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "6",
+    "title": "タンタカタンタンタンタンメン",
+    "artist": "ぼっちぼろまる",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "7",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "9",
+    "title": "XOXO (feat. SPRITE)",
+    "artist": "Repezen Foxx",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "10",
+    "title": "はじまり",
+    "artist": "Gaho",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "11",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "12",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "13",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "14",
+    "title": "推し変なんて許さない！",
+    "artist": "可憐なアイボリー",
+    "id": "404",
+    "url": "404",
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "17",
+    "title": "キュアー・フォー・ミー",
+    "artist": "オーロラ",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "18",
+    "title": "KISS FT SUPENATURAL VER 1 - REMIX",
+    "artist": "TVT",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "19",
+    "title": "JUICY",
+    "artist": "Snow Man",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "20",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/9/19"
+  },
+  {
+    "rank": "2",
+    "title": "有難う",
+    "artist": "TENSONG",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "3",
+    "title": "もう一度",
+    "artist": "Tani Yuuki",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "7",
+    "title": "XOXO (feat. SPRITE)",
+    "artist": "Repezen Foxx",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "8",
+    "title": "はじまり",
+    "artist": "Gaho",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "9",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "10",
+    "title": "KISS FT SUPENATURAL",
+    "artist": "TVT",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "12",
+    "title": "タンタカタンタンタンタンメン",
+    "artist": "ぼっちぼろまる",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "13",
+    "title": "キュアー・フォー・ミー",
+    "artist": "オーロラ",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "14",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "15",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "16",
+    "title": "推し変なんて許さない！",
+    "artist": "可憐なアイボリー",
+    "id": "404",
+    "url": "404",
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "17",
+    "title": "悪魔のキッス",
+    "artist": "悪魔のキッス(戦慄かなの&かてぃ)",
+    "id": "404",
+    "url": "404",
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "19",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/9/26"
+  },
+  {
+    "rank": "4",
+    "title": "XOXO (feat. SPRITE)",
+    "artist": "Repezen Foxx",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "6",
+    "title": "有難う",
+    "artist": "TENSONG",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "7",
+    "title": "KISS FT SUPERNATURAL VER 1 - REMIX",
+    "artist": "TVT",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "8",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "10",
+    "title": "時計の歌",
+    "artist": "ののちゃん(村方乃々佳)",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "11",
+    "title": "はじまり",
+    "artist": "Gaho",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "13",
+    "title": "推し変なんて許さない！",
+    "artist": "可憐なアイボリー",
+    "id": "404",
+    "url": "404",
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "14",
+    "title": "タンタカタンタンタンタンメン",
+    "artist": "ぼっちぼろまる",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "15",
+    "title": "キュアー・フォー・ミー",
+    "artist": "オーロラ",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "16",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "17",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "18",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "20",
+    "title": "POP!",
+    "artist": "NAYEON",
+    "id": null,
+    "url": null,
+    "date": "2022/10/3"
+  },
+  {
+    "rank": "2",
+    "title": "XOXO (feat. SPRITE)",
+    "artist": "Repezen Foxx",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "4",
+    "title": "KISS FT SUPERNATURAL VER 1 - REMIX",
+    "artist": "TVT",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "6",
+    "title": "ブルーアンビエンス (feat.asmi)",
+    "artist": "Mrs. GREEN APPLE",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "9",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "11",
+    "title": "推し変なんて許さない！",
+    "artist": "可憐なアイボリー",
+    "id": "404",
+    "url": "404",
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "14",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "15",
+    "title": "キュアー・フォー・ミー",
+    "artist": "オーロラ",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "16",
+    "title": "はじまり",
+    "artist": "Gaho",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "17",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "19",
+    "title": "異世界混合大舞踏会 (feat. おばけ)",
+    "artist": "星野源",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "20",
+    "title": "もう一度",
+    "artist": "Tani Yuuki",
+    "id": null,
+    "url": null,
+    "date": "2022/10/10"
+  },
+  {
+    "rank": "1",
+    "title": "スウェット",
+    "artist": "ねぐせ。",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "2",
+    "title": "KISS FT SUPERNATURAL VER 1 - REMIX",
+    "artist": "TVT",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "5",
+    "title": "XOXO (feat. SPRITE)",
+    "artist": "Repezen Foxx",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "6",
+    "title": "ブルーアンビエンス (feat.asmi)",
+    "artist": "Mrs. GREEN APPLE",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "8",
+    "title": "可愛くてごめん (feat. かぴ)",
+    "artist": "HoneyWorks",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "11",
+    "title": "Way Back Home (feat. Conor Maynard) [Sam Feldt Festival Mix]",
+    "artist": "SHAUN",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "12",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "14",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "16",
+    "title": "推し変なんて許さない！",
+    "artist": "可憐なアイボリー",
+    "id": "404",
+    "url": "404",
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "18",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "20",
+    "title": "はじまり",
+    "artist": "Gaho",
+    "id": null,
+    "url": null,
+    "date": "2022/10/17"
+  },
+  {
+    "rank": "1",
+    "title": "Way Back Home (feat. Conor Maynard) [Sam Feldt Festival Mix]",
+    "artist": "SHAUN",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "3",
+    "title": "そうだった！！ (feat. 初音ミク)",
+    "artist": "タケノコ少年",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "4",
+    "title": "スウェット",
+    "artist": "ねぐせ。",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "8",
+    "title": "可愛くてごめん (feat. かぴ)",
+    "artist": "HoneyWorks",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "9",
+    "title": "ブルーアンビエンス (feat.asmi)",
+    "artist": "Mrs. GREEN APPLE",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "11",
+    "title": "KISS FT SUPERNATURAL VER 1 - REMIX",
+    "artist": "TVT",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "12",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "14",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "17",
+    "title": "エジソン",
+    "artist": "水曜日のカンパネラ",
+    "id": null,
+    "url": null,
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "19",
+    "title": "推し変なんて許さない！",
+    "artist": "可憐なアイボリー",
+    "id": "404",
+    "url": "404",
+    "date": "2022/10/24"
+  },
+  {
+    "rank": "1",
+    "title": "Way Back Home (feat. Conor Maynard) [Sam Feldt Festival Mix]",
+    "artist": "SHAUN",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "2",
+    "title": "そうだった！！ (feat. 初音ミク)",
+    "artist": "タケノコ少年",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "4",
+    "title": "可愛くてごめん (feat. かぴ)",
+    "artist": "HoneyWorks",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "5",
+    "title": "本当はね、",
+    "artist": "ヤングスキニー",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "10",
+    "title": "ブルーアンビエンス (feat.asmi)",
+    "artist": "Mrs.GREEN APPLE",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "14",
+    "title": "スウェット",
+    "artist": "ねぐせ。",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "15",
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "16",
+    "title": "Athletic Meet \"Heaven and Hell\"",
+    "artist": "Shinonome",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
+  },
+  {
+    "rank": "18",
+    "title": "PSYCHO",
+    "artist": "OdAkEi",
+    "id": null,
+    "url": null,
+    "date": "2022/10/31"
   }
 ]

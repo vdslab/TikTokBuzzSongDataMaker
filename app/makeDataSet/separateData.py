@@ -21,8 +21,10 @@ def separateUsabaleTiktokData(data):
 
 def getRequiredFeatureList(song_ids, song_data):
     require_data = []
+    require_data_id_list = []
     for song in song_data:
-        if not song["id"] in song_ids:
+        if not song["id"] in song_ids and not song["id"] in require_data_id_list:
+            require_data_id_list.append(song["id"])
             require_data.append(song)
 
     with open('./data/feature_require_data.json', 'w', encoding='utf-8') as f:

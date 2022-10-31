@@ -7,7 +7,7 @@ def insertPastSongsTable(data):
         post_data = {
             "id": song["id"],
             "rank": song["rank"],
-            "date": song["data"],
+            "date": song["date"],
         }
         api.post_past_songs_one(post_data)
         time.sleep(0.5)
