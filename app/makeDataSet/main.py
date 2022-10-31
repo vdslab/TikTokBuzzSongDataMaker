@@ -31,8 +31,10 @@ tiktok_invalid_rank_data = json.load(tiktok_invalid_rank_data_file)
 # songsテーブルにidがあるかを調べる
 # idがなければ特徴データを作成
 #tiktok_available_rank_data, spotify_un_buzz_songに対して
-song_lit = tiktok_available_rank_data + spotify_un_buzz_song
+song_list = tiktok_available_rank_data + spotify_un_buzz_song
 song_ids = api.getAllSongsId()
-requiredFeatureList = []
+requiredFeatureList = separateData.getRequiredFeatureList(song_ids, song_list)
 
-# print(song_ids)
+# 特徴量を取得
+
+# songsに挿入
