@@ -37,6 +37,8 @@ song_ids = api.getAllSongsId()
 requiredFeatureList = separateData.getRequiredFeatureList(song_ids, song_list)
 
 # 特徴量を取得
-makeFeature.add_feature_and_formated_data(requiredFeatureList[:3])
+song_feature_list = makeFeature.add_feature_and_formated_data(
+    requiredFeatureList[:3])
 
 # songsに挿入
+insertDb.insertSongsTable(song_feature_list)
