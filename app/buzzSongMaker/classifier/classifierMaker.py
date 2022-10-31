@@ -1,11 +1,14 @@
-from api import getAllPastSongs
+from os.path import dirname, abspath
+import sys
+file_path = dirname(abspath(__file__))
+sys.path.append(file_path)
+import json
+from classifierApi import getAllPastSongs, getPastSongsBeforeDate
 from analysis.randomForest import random_forest_classifier_maker
 from analysis.logistic import logistic_classifier_maker
 from analysis.svm import svm_classifier_maker
 
 # 分類器のアップデート？をする
-
-
 # TODO:このデータの整形をなしの形でapiからとってきたい
 def formatData(data):
     music_feature_key = ['danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
@@ -16,7 +19,10 @@ def formatData(data):
         obj["rank"] = d["rank"]
         if d["detail"].get("music_feature"):
             for key in music_feature_key:
-                obj[key] = d["detail"]["music_feature"][key]
+                music_feature_d = d["detail"]["music_feature"]
+                if type(music_feature_d) is str:
+                    music_feature_d  = json.loads( d["detail"]["music_feature"])
+                obj[key] = music_feature_d[key]
         else:
             continue
         # THINK:歌詞データがないのを省くでいいのかどうか（現状は省いている）
@@ -37,6 +43,17 @@ def formatData(data):
 
 def main():
     data = getAllPastSongs()
+    formated_data = formatData(data)
+
+    random_forest_classifier_maker(formated_data)
+    logistic_classifier_maker(formated_data)
+    svm_classifier_maker(formated_data)
+
+    print("fin make_classitier")
+
+
+def createClassifierByDate(date):
+    data = getPastSongsBeforeDate(date)
     formated_data = formatData(data)
 
     random_forest_classifier_maker(formated_data)
