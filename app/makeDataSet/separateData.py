@@ -1,7 +1,7 @@
 import json
 
 
-def separateUsabaleData(data):
+def separateUsabaleTiktokData(data):
     available_rank_data = []
     invalid_rank_data = []
     for song in data:

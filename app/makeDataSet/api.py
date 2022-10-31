@@ -20,7 +20,11 @@ def getAllSongsId():
     data = res.json()
     songs_id = data["songs"]
 
-    return songs_id
+    ids = []
+    for data in songs_id:
+        ids.append(data["id"])
+
+    return ids
 
 
 def post_past_songs_one(data):
