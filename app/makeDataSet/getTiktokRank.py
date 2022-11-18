@@ -44,8 +44,8 @@ def main():
     tiktok_ranking_data = []
     # date = datetime.date(2021, 12, 13)
     # end = datetime.date(2022, 5, 16)
-    date = datetime.date(2022, 5, 23)
-    end = datetime.date(2022, 10, 31)
+    date = datetime.date(2022, 10, 31)
+    end = datetime.date(2022, 11, 17)
     while date <= end:
         print(date)
         year = date.year

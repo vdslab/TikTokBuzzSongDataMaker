@@ -8,6 +8,7 @@ from classifier.classifierMaker import createClassifierByDate
 file_path = os.path.dirname(os.path.realpath(__file__))
 # file_name = file_path+"/data/regional-jp-weekly-2022-07-014.csv"
 file_name = file_path+"/data/spotify_data/csv/regional-jp-weekly-2022-07-14.csv"
+file_name = file_path+"/data/spotify_data/csv/regional-jp-weekly-2022-11-10.csv"
 date = file_name[-14:-4]
 
 
