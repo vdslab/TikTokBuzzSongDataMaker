@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
-from buzzSongMaker.addFeatureAndFormatedData import get_song_info
+from buzzSongMaker.addFeatureAndFormatedData import get_song_info, get_song_music_info
 from buzzSongMaker.classifierData import classifier_data
 import time
 
@@ -20,7 +20,8 @@ def get_similar_buzz_song_list(song_id):
 
     similar_feature_data_list = []
     for song in similar_songs:
-        song_info = get_song_info(song["id"])
+        # song_info = get_song_info(song["id"])
+        song_info = get_song_music_info(song["id"])
         similar_feature_data_list.append(song_info)
         time.sleep(0.5)
 
